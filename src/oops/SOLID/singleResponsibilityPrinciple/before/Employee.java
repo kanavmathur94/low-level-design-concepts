@@ -62,7 +62,7 @@ public abstract class Employee {
     public String getFullName(){
         return this.firstName + " " + this.lastName;
     }
-
+    /*
     public  void save(){
         try {
         	Employee employee =this;
@@ -91,4 +91,9 @@ public abstract class Employee {
             System.out.println("ERROR: Could not save employee. " + e);
         }
     }
+    */
+    public  void save(){
+        try {
+            SaveEmployee.saveData(this);
+        } 
 }
